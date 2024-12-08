@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for cours in course %}
+<ul>
+    <li><h1>{{ cours.title }}</h1></li>
+    <li><h1>{{ cours.description }}</h1></li>
+    <li><img src="{{ post.photo.url }}" width="200px"></li>
+    {% for student in student %}
+    <ul>
+        <li>{{ student.name }}</li>
+        <li>{{ student.email }}</li>
+        <li>{{ student.course }}</li>
+    </ul>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+
+
+</body>
+</html>
